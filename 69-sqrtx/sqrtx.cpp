@@ -2,10 +2,10 @@ class Solution {
 public:
     int mySqrt(int x) {
 
-        long long int s=0;
-        long long int e=x;
-        long long int mid=s+(e-s)/2;
-        long long int ans=0;
+        long long   s=0;
+        long long   e=x;
+        long long   mid=s+(e-s)/2;
+        long long   ans=0;
        
 
         while(s<=e){
