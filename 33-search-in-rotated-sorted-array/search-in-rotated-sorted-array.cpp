@@ -8,7 +8,7 @@ public:
         int last=e;
         
         while(e>s){
-            if(nums[mid]>=nums[0]){
+            if(nums[mid]>=nums[e]){
                 s=mid+1;
 
             }
