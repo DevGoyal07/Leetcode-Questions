@@ -4,8 +4,10 @@ WITH FirstYearSales AS(
     FROM Sales
     GROUP BY product_id
 )
-SELECT s.product_id, fys.first_year, s.quantity, s.price
-FROM Sales AS s
-JOIN FirstYearSales as fys
-ON s.product_id = fys.product_id
-AND s.year = fys.first_year
+
+SELECT s.product_id, f.first_year, s.quantity, s.price
+FROM Sales as s
+INNER JOIN FirstYearSales as f
+ON s.product_id = f.product_id AND s.year = f.first_year
+
+
